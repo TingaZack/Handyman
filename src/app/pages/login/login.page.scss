@@ -1,0 +1,23 @@
+#topContainer {
+    justify-content: center;
+    align-items: center;
+}
+#userImgContainer {
+    display: flex;
+    flex: 2.5;
+    background: #510357;
+    flex-direction: column;
+    margin-right:25px;
+    padding-block-end: 25px;
+    padding-top: 25px;
+    padding-right: 16px;
+    shape-outside: margin-box;
+}
+#header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ion-content{
+    --background-color: #85478a;
+}

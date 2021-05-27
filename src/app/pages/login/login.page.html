@@ -1,0 +1,59 @@
+<ion-content>
+
+  <div id="topContainer">
+    <div id="userImgContainer">
+
+      <img src="../../assets/imgs/logo3.jpeg">
+    </div>
+    <!--div style="display: flex; flex-direction: row; margin-bottom: 16px;"
+    <ion-list-header>Sign In</ion-list-header>-->
+    <div id="welcomeMsgContainer">
+    </div>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary-shade" size="full">Sign In </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+
+        <ion-label expand="block" color="primary-shade" position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
+
+        <ion-label expand="block" color="primary-shade" position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-button expand="fill" fill="outline">Remember Me </ion-button>
+      <ion-button expand="fill" fill="outline">Forgot Password</ion-button>
+      <ion-button color="primary" expand="fill" size="full" (click)="login()">LOGIN</ion-button>
+      <ion-button color="medium" expand="fill" fill="clear" size="full" (click)="register()">REGISTER</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-button expand="block">User Name</ion-button>
+<ion-button expand="block">Password</ion-button>
+<ion-button expand="fill" fill="outline">Remember Me</ion-button><ion-button expand="fill" fill="outline">Forgot Password</ion-button>
+
+<ion-button shape="block" fill="outline">SIGN UP</ion-button>
+<div class="signup">
+  <ion-card-content>
+  Still not connected? Sign Up
+</ion-card-content>
+</div>
+
+<ion-button>
+  <ion-icon slot="icon-only" name="star"></ion-icon>
+</ion-button>
+<ion-button>
+  <ion-icon slot="icon-only" name="star"></ion-icon>
+</ion-button>-->
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>@2021 Handyman| All right reserved.</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

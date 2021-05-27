@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome back Lahya</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-textarea placeholder="Enter information here..."></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Select Category</ion-label>
+    <ion-select multiple="true" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Category">Plumber</ion-select-option>
+      <ion-select-option value="Category">Welder</ion-select-option>
+      <ion-select-option value="Category">Carpeter</ion-select-option>
+      <ion-select-option value="Category">Electrician</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Location</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>MM DD YY</ion-label>
+    <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>h:mm a</ion-label>
+    <ion-datetime displayFormat="h:mm a"></ion-datetime>
+  </ion-item>
+  <ion-button shape="block" type="Phone" fill="outline">Phone number (optional)</ion-button>
+  <ion-button shape="block" fill="outline">Email</ion-button>
+  
+  <ion-button expand="block">Get a Price</ion-button> <!-- shall email your quotation shortly-->
+
+
+  <br>
+  <br>
+  <ion-footer>
+    Need help? Contact us +264 8123 69180 for urget issues, we aim to respond within minutes.
+
+    <br>
+    <ion-toolbar>
+      <ion-title>@2021 Handyman| All right reserved.</ion-title> <!--The footer is cut, do you perhaps know-->
+      <img src="../../assets/imgs/logo7.jpeg">"
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+</ion-app>

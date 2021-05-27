@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="full" color="primary">Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">Earn money your way</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Client</ion-label>
+          <ion-radio value="CLIENT" slot="start"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Handyman</ion-label>
+          <ion-radio value="PARTNER" slot="start"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">Contact</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone number</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">Address information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Physical Address</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Erf</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>Select Category</ion-label>
+        <ion-select multiple="true" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="Category">Plumber</ion-select-option>
+          <ion-select-option value="Category">Welder</ion-select-option>
+          <ion-select-option value="Category">Carpeter</ion-select-option>
+          <ion-select-option value="Category">Electrician</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!--I would like to to have a select option of: Select day of service, select slot tim.  just like the SELECT CATEGORY, However it is appearing different.-->
+
+      <ion-item>
+        <ion-label>Select day of service</ion-label>
+        <ion-select multiple="true" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="Category">Monday-Friday</ion-select-option>
+          <ion-select-option value="Category">Saturday</ion-select-option>
+          <ion-select-option value="Category">Sunday & Public holiday</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Select slot time</ion-label>
+        <ion-select multiple="true" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="Category">8am-5pm</ion-select-option>
+          <ion-select-option value="Category">10am-11am</ion-select-option>
+          <ion-select-option value="Category">11am-12am</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <!--If I can have a function that say "registration succesful-->
+      <ion-button expand="block" color="primary" (click)="presentAlert()">Register</ion-button>
+    </ion-card-content>
+    <ion-button exapand="block" size="full" color="light">UPDATE</ion-button>
+  </ion-card>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>@2021 Handyman| All right reserved.</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

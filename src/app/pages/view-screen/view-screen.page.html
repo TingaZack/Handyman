@@ -1,0 +1,39 @@
+<ion-content>
+
+  <div id="main-holder">
+    <div id="top-holder">
+      <img src="{{ data.img }}" alt="">
+    </div>
+    <div id="bottom-holder">
+      <table>
+        <tr>
+          <td>
+            <h2>{{ data.name }}</h2>
+          </td>
+          <td>
+            <p>{{data.workExp}}</p>
+          </td>
+        </tr>
+      </table>
+      <h3>${{ data.pricePerHr }}</h3>
+      <p>{{ data.availableWeekDays }}({{data.availableTimeSlot}})</p>
+      <!-- <table>
+        <tr>
+          <td>
+            <p>{{ data.availableWeekDays }}</p>
+            <p></p>
+          </td>
+          <td align="right">
+            
+          </td>
+        </tr>
+      </table> -->
+    </div>
+  </div>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button size="full" (click)="presentAlert()">Book</ion-button>
+  </ion-toolbar>
+</ion-footer>
